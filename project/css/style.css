@@ -1,6 +1,11 @@
 body {
   background-color: #a1a1a1;
   font: Arial, Verdana, Helvetica, sans-serif;
-  color: #00aeef;
-  background-color: #a1a1a1;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Nosifer', cursive;
+  color: #0000ff;
+  font-weight: normal;
 }
