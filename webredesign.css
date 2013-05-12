@@ -1,0 +1,39 @@
+/* CSS Document */
+body {
+  font: Verdana, Helvetica, sans-serif;
+  color: #035aa6;
+  background-color: #e4f1f2;
+  max-width: 961px;
+  margin: 10px auto;
+  border: 5px solid #034aa6;
+  padding: 15px;
+}
+
+hr {
+  background-color: #c14543;
+  height: 1px;
+}
+
+h1 {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 36px;
+  font-weight: normal;
+  color: #034aa6;
+}
+
+h2 {
+  font-family: Verdana, Helvetica, sans-serif;
+  color: #59a8d9;
+}
+
+h3 {
+  font-family: Verdana, Helvetica, sans-serif;
+  color: #c14543;
+}
+
+#competitive ol li {
+  padding-bottom: 25px;
+}
+
+
+
