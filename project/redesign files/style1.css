@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font: 100%/1.5 Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	background-color: #fff;
+	max-width: 961px;
+	padding: 0;
+	margin: 10px auto;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+a img, :link img, :visited img {
+	border: 0;
+}
+:link, :visited {
+	text-decoration: none;
+}
+address {
+	font-style: normal;
+}

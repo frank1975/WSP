@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Contact Us page</title>
+<link href="style1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="main_container">
+  <div class="page_6"> 
+    <!-- header -->
+    <header>
+      <div id="header_container">
+        <h1><a href="index.html">Signs by Design</a></h1>
+        <nav>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="vehicle_graphics.html">Vehicle Graphics</a></li>
+            <li><a href="illuminated_signs.html">Illuminated Signs</a></li>
+            <li><a href="non_illuminated_signs.html">Non Illuminated Signs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--contact form-->
+    <section class="contact_form">
+      <div id="form_container">
+        <h2>Contact Me</h2>
+        <form method="get" action="post">
+          <div>
+            <label form="name">Name</label>
+            <input type="text" name="name_first" id="name_first">
+          </div>
+          <div>
+            <label form="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label form="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
+          </div>
+          <div>
+            <label form="Regarding">Regarding</label>
+          </div>
+          <div>
+            <select name="Regarding" id="Regarding">
+              <option>Services</option>
+              <option>Vehicle Graphics</option>
+              <option>Illuminated Signs</option>
+              <option>Non Illuminated Signs</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="contact_phone" id="contact_phone"/>
+            <p> I prefer to be contacted by phone</p>
+          </div>
+          <div>
+            <button type="submit" name="submit" class="button"> Send Message </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+<!--footer-->
+<footer>
+  <div id="footer_container">
+    <div class="footer_services"> <a href="services.html">
+      <h3>Services</h3>
+      </a>
+      <ul>
+        <li>Repairs</li>
+        <li>Refurbishing</li>
+        <li>Survey & Permit</li>
+        <li>Lighting</li>
+      </ul>
+    </div>
+    <div class="social_media">
+      <h3>Follow Us</h3>
+      <ul class="icons">
+        <li><a href="http://www.facebook.com"><img src="images/facebook.jpg" alt="">Facebook</a></li>
+        <li><a href="http://www.twitter.com"><img src="images/twitter.jpg" alt="">Twitter</a></li>
+        <li><a href="http://www.linkedin.com"><img src="images/linkedin.jpg" alt="">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer_contact_info">
+      <h3>Address</h3>
+      <p>6 East Lee Road Taylors, SC 29687</p>
+      <p>Email:<a href="mailto:info4sign@gmail.com">email info4sign@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
