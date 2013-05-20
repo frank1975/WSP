@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font: "PlayfairDisplaySC Regular", Helvetica, Verdana, sans-serif;
+	text-shadow: 5px 5px 2px gray;
+	color: #035aa6;
+	background-color: #8E9291;
+	max-width: 961px;
+	margin: 10px auto;
+}
+figure {
+	margin-bottom: 25px;
+}
