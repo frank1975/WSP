@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <title>Home page</title>
-<link href="style1.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<link href="style1.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="main_container">
@@ -11,9 +12,10 @@
     <!-- header -->
     <header>
       <div id="header_container">
-        <h1><a href="index.html">Signs by Design</a></h1>
+        <h1><a href="index.html" class="logo">Signs by Design</a></h1>
         <nav>
           <ul>
+            <li class="current"><a href="home.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="vehicle_graphics.html">Vehicle Graphics</a></li>
             <li><a href="illuminated_signs.html">Illuminated Signs</a></li>
@@ -26,12 +28,12 @@
     <!-- main content  -->
     <section id="call_to_action">
       <div id="call_container">
-        <h2>Welcome to Signs by Design</h2>
-        <p>Thank you for visiting our site. We design, manufacture, install, repair, maintain and refurbish all types of signage.We welcome both local customers and national 
-        accounts.</p>
-        <p>This website demonstrates a wide variety of custom signs. If you need assistance with what types of materials or sign will work best for you, please feel free to email or 	  	 		call, and  we'll work with you to create a custom sign for your business.</p>
-        <p>Our staff values your business and is committed to providing quality products for our clients. We desire to have a long term relationship with our clients by 	 		 		 		meeting all of their signage needs.</p>
-        <figure class="photos"><img src="images/sandblast9.jpg" alt="photo of sandblasted sign" width="487" height="292" title="sandblasted sign"/></figure>
+        <figure class="photos"><img src="images/sandblast9.jpg" alt="photo of sandblasted sign" title="sandblasted sign"/></figure>
+        <h2>WELCOME TO SIGNS BY DESIGN</h2>
+        <p>Thank you for visiting our site. We design, manufacture, install, repair, maintain and refurbish all types of signage.We welcome both local customers and national accounts. </p>
+        <p>This website demonstrates a wide variety of custom signs. If you need assistance with what types of materials or sign will work best for you, please feel free to email or call, and  we'll work with you to create a custom sign for your business.</p>
+        <p>Our staff values your business and is committed to providing quality products for our clients. We desire to have a long term relationship with our clients by meeting all of their signage needs.</p>
+        <p><a href="services.html" class="button"> Read More</a> </p>
       </div>
     </section>
     <section id="type_of_signs">
@@ -39,63 +41,23 @@
         <h2>Custom Made Signs</h2>
         <article id="vehicle_graphics">
           <h3>Vehicle Graphics</h3>
-          <figure class="photos" ><a href="vehicle_graphics.html"><img src="images/vehicle3.jpg" alt="photo of a semi truck" width="200" height="150" title="semi-truck sign"/></a> 
-          </figure>
+          <figure class="photos" ><a href="vehicle_graphics.html"><img src="images/vehicle6.jpg" alt="photo of a semi truck"  title="semi-truck sign"/></a> </figure>
           <p> A great way to promote your business or product is by advertising on your vehicle. It's like having a moving billboard!</p>
+          <p><a href="vehicle_graphics.html" class="button"> Read More</a> </p>
         </article>
         <article id="illuminated_signs">
           <h3>Illuminated Signs</h3>
-          <figure class="photos"><a href="illuminated_signs.html"><img src="images/led.jpg" alt="photo of a neon subs sign" width="200" height="150" title="neon subs sign"/></a> 
-          </figure>
+          <figure class="photos"><a href="illuminated_signs.html"><img src="images/neon3.jpg" alt="photo of a neon subs sign" title="neon subs sign"/></a> </figure>
           <p>Industries of all types, from fuel stations to department stores, use Illuminated signs. Since illuminated signs have such a great impact, there is always  the need to get 	 	 	  proper permitting to install such signage.</p>
+          <p><a href="illuminated_signs.html" class="button"> Read More</a> </p>
         </article>
         <article id="non_illuminated_signs">
           <h3>Non Illuminated Signs</h3>
-          <figure class="photos"><a href="non_illuminated_signs.html"><img src="images/sandblast6.jpg" alt="photo of a sandblasted sign" width="200" height="150" 
+          <figure class="photos"><a href="non_illuminated_signs.html"><img src="images/sandblast6.jpg" alt="photo of a sandblasted sign" 
           title="sandblasted sign"/></a></figure>
           <p>In various applications lighting may not be required. Signs by Design has the capability to make nearly any type of non-illuminated sign for your needs.</p>
+          <p><a href="non_illuminated_signs.html" class="button"> Read More</a> </p>
         </article>
-      </div>
-    </section>
-    <section class="contact_form">
-      <div id="form_container">
-        <h2>Contact Me</h2>
-        <form method="get" action="post">
-          <div>
-            <label form="name">Name</label>
-            <input type="text" name="name_first" id="name_first">
-          </div>
-          <div>
-            <label form="email">Email</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div>
-            <label form="subject">Subject</label>
-            <input type="text" name="subject" id="subject">
-          </div>
-          <div>
-            <label form="Regarding">Regarding</label>
-          </div>
-          <div>
-            <select name="Regarding" id="Regarding">
-              <option>Services</option>
-              <option>Vehicle Graphics</option>
-              <option>Illuminated Signs</option>
-              <option>Non Illuminated Signs</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Your Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <div>
-            <input type="checkbox" name="contact_phone" id="contact_phone"/>
-            <p> I prefer to be contacted by phone</p>
-          </div>
-          <div>
-            <button type="submit" name="submit" class="button"> Send Message </button>
-          </div>
-        </form>
       </div>
     </section>
   </div>

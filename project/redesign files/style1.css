@@ -1,25 +1,265 @@
 @charset "UTF-8";
-/* CSS Document */
+/*----------------resets--------------------*/
+
 body {
-	font: 100%/1.5 Arial, Verdana, Helvetica, sans-serif;
+	font: 100%/ 1.5 Arial, Verdana, Helvetica, sans-serif;
 	color: #000;
-	background-color: #fff;
-	max-width: 961px;
-	padding: 0;
+	max-width: 960px;
 	margin: 10px auto;
-	font-weight: inherit;
-	font-family: inherit;
-	font-style: inherit;
+	background-color: #fff;
 }
-ol, ul {
-	list-style: none;
-}
-a img, :link img, :visited img {
-	border: 0;
-}
-:link, :visited {
+ul, a {
+	list-style-type: none;
 	text-decoration: none;
 }
-address {
-	font-style: normal;
+/*----------------header-------------------*/
+#main_container {
+	margin: 36px auto;
+	max-width: 100%;
+}
+#header_container {
+	width: 100%; /*960px*/
+	background-image: url("images/headerbanner.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	margin-bottom: 20px;
+	overflow: visi;
+}
+#header_container .logo {
+	width: 100%;
+	background-image: url("images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	float: left;
+	height: auto;
+	min-height: 55px;
+	margin-top: 17px;
+	margin-right: 2.395833%;/*23px*/
+	margin-left: 2.395833%;/*23px*/
+	text-indent: -9999px;
+}
+nav {
+	width: 100%;
+	background-image: url("images/nav_container.png");
+	background-repeat: no-repeat;
+	height: 50px;
+	float: left;
+	padding: 0;
+	margin-top: .833333%; /*8px*/
+	margin-bottom: 2.604167%; /*25px*/
+}
+nav li {
+	display: inline-block;
+}
+nav li a {
+	display: block;
+	padding-right: 50px;
+	font-family: Open Sans Bold;
+	color: #e7e2d9;
+}
+nav li a:hover {
+	color: #e39d1f;
+}
+ul .current a {
+	color: #e39d1f;
+}
+#call_container {
+	width: 100%;
+	height: 352px;
+	background-image: url("images/cta_container.jpg");
+	background-repeat: no-repeat;
+	margin-top: 3.125%; /*30px*/
+}
+#call_container h2 {
+	font-family: Playfair Display SC regular;
+	font-size: 1.250em; /*24px*/
+	color: #e39d1f;
+	width: 355px;
+	margin-left: 23px;
+	margin-bottom: 0;
+	padding: 0;
+}
+#call_container p {
+	width: 38.75%; /*367px/960px*/
+	font-family: Open Sans Bold;
+	font-size: .875em;/*13px*/
+	color: #e7e2d9;
+	margin-top: .833333%; /*8px*/
+	margin-left: 2.395833%;/*23px*/
+	margin-bottom: none;
+}
+#call_container img {
+	width: 56.1458333%;/*539px/960px*/
+	box-shadow: 5px 5px 5px #000;
+	float: right;
+	margin-top: .520833%; /*5px*/
+	margin-right: 0;
+	margin-left: 2.395833%;/*23px*/
+}
+#call_container .button {
+	width: 15.625%; /*150px/960px*/
+	font-size: .813em;/*13px*/
+	text-align: center;
+	padding: 6px 10px;
+	display: block;
+	background: #e39d1f;
+	border: none;
+	border-radius: 6px;
+	color: #fff;
+	margin-left: 270px;
+	margin-bottom: 5px;
+}
+#signs_container {
+	background-image: url("images/body_container.jpg");
+	width: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#signs_container h2 {
+	font-size: 1.5em; /*24px*/
+	margin-left: 2.395833%;/*23px*/
+}
+#signs_container h3 {
+	font-size: 1.313em; /*21px*/
+}
+#vehicle_graphics img {
+	max-width: 100%;
+	width: 26.041667%;/*250px*/
+ height:100% margin-left: 2.395833%;/*23px*/
+	margin-bottom: 2.916667%;/*28px*/
+}
+#vehicle_graphics p {
+	font-family: Open Sans regular;
+	color: #454546;
+	font-size: 1.313em; /*21px*/
+	width: 100%; /*960px*/
+}
+#illuminated_signs img {
+	max-width: 100%;
+	width: 26.041667%;/*250px*/
+	height: auto;
+	margin-left: 7.291667%; /*70px*/
+	margin-bottom: 2.916667%;/*28px*/
+	position: absolute;
+	top: 130px;
+	left: 292px;
+}
+#illuminated_signs p {
+	font-family: Open Sans regular;
+	color: #454546;
+	width: 100%; /*960px*/
+}
+#non_illuminated_signs img {
+	max-width: 100%;
+	width: 26.041667%;/*250px*/
+	height: auto;
+	margin-left: 7.291667%; /*70px*/
+	margin-bottom: 2.916667%;/*28px*/
+	position: absolute;
+	top: 130px;
+	left: 614px;
+}
+#non_illuminated_signs p {
+	font-family: Open Sans regular;
+	color: #454546;
+	width: 100%; /*960px*/
+}
+
+
+/*-------------------MEDIA QUERIES------------------------*/
+
+
+@media screen and (min-width: 768px) and (max-width:959px) {
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+#header_container {
+	height: auto;
+}
+}
+ @media only screen and (min-width: 480px) and (max-width:767px) {
+#call_container img {
+	display: top;
+}
+#call_container h2 {
+	font-size: 18px;
+}
+#signs_container h2 {
+	font-size: 18px;
+}
+#vehicle_graphics h3 {
+	font-size: 16px;
+}
+#illuminated_signs h3 {
+	font-size: 16px;
+}
+#non_illuminated_signs h3 {
+	font-size: 16px;
+}
+}
+ @media only screen and (max-width:479px) {
+#call_container h2 {
+	font-size: 16px;
+}
+#signs_container h2 {
+	font-size: 16px;
+}
+#vehicle_graphics h3 {
+	font-size: 14px;
+}
+#illuminated_signs h3 {
+	font-size: 14px;
+}
+#non_illuminated_signs h3 {
+	font-size: 14px;
+}
+}
+@media screen and (max-width: 600px) {
+nav {
+	float: left;
+	min-height: 40px;
+}
+nav ul {
+	width: 180px;
+	padding: 5px 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: solid 1px #aaa;
+	background: #fff url(images/11.png) no-repeat 10px 11px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+nav li {
+	display: none; 
+	margin: 0;
+}
+nav .current {
+	display: block; 
+}
+nav a {
+	display: block;
+	padding: 5px 5px 5px 32px;
+	text-align: left;
+}
+nav .current a {
+	background: none;
+	color: #666;
+}
+
+nav ul:hover {
+	background-image: none;
+}
+nav ul:hover li {
+	display: block;
+	margin: 0 0 5px;
+}
+
+nav.left ul {
+	left: auto;
+	right: 0;
+}
 }
