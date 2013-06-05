@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*-----CSS for Bubble Under site------------*/
 /*----------------resets--------------------*/
 
 body {
@@ -8,43 +7,47 @@ body {
 	max-width: 960px;
 	margin: 10px auto;
 	background-color: #fff;
-	border: 1px solid #454546;
-}
- padding: 0; {
-}
-margin:0; {
 }
 ul, a {
 	list-style-type: none;
 	text-decoration: none;
 }
 /*----------------header-------------------*/
-
-
+#main_container {
+	margin: 36px auto;
+	max-width: 100%;
+}
 #header_container {
-	max-width: 100%; /*960px*/
+	width: 100%; /*960px*/
 	background-image: url("images/headerbanner.png");
 	background-repeat: no-repeat;
-	height: 80px;
-	overflow: hidden;
+	height: 100px;
+	margin-bottom: 20px;
+	overflow: visi;
 }
 #header_container .logo {
-	width: 176px;
+	width: 100%;
 	background-image: url("images/logo.png");
 	background-repeat: no-repeat;
+	background-size: contain;
 	display: block;
-	height: 57px;
-	margin-left: 23px;
-	text-indent: -9999%;
+	float: left;
+	height: auto;
+	min-height: 55px;
+	margin-top: 17px;
+	margin-right: 2.395833%;/*23px*/
+	margin-left: 2.395833%;/*23px*/
+	text-indent: -9999px;
 }
 nav {
 	width: 100%;
-	height: 80px;
 	background-image: url("images/nav_container.png");
 	background-repeat: no-repeat;
-	position: absolute;
-	top: 91px;
-	overflow: hidden;
+	height: 50px;
+	float: left;
+	padding: 0;
+	margin-top: .833333%; /*8px*/
+	margin-bottom: 2.604167%; /*25px*/
 }
 nav li {
 	display: inline-block;
@@ -52,7 +55,6 @@ nav li {
 nav li a {
 	display: block;
 	padding-right: 50px;
-	margin-bottom: 20px;
 	font-family: Open Sans Bold;
 	color: #e7e2d9;
 }
@@ -67,8 +69,7 @@ ul .current a {
 	height: 352px;
 	background-image: url("images/cta_container.jpg");
 	background-repeat: no-repeat;
-	margin-top: 52px;
-	overflow: hidden;
+	margin-top: 3.125%; /*30px*/
 }
 #call_container h2 {
 	font-family: Playfair Display SC regular;
@@ -110,90 +111,60 @@ ul .current a {
 	margin-bottom: 5px;
 }
 #signs_container {
-	width: 100%;
 	background-image: url("images/body_container.jpg");
+	width: 100%;
+	position: relative;
 	background-repeat: no-repeat;
-	height: 531px;
 	overflow: hidden;
 }
 #signs_container h2 {
-	font-family: Playfair Display SC regular;
 	font-size: 1.5em; /*24px*/
-	color: #e39d1f;
 	margin-left: 2.395833%;/*23px*/
 }
 #signs_container h3 {
-	font-family: Playfair Display SC regular;
 	font-size: 1.313em; /*21px*/
-	color: #454546;
-	margin-left: 2.395833%;/*23px*/
 }
-#vehicle_graphics .photos {
-	width: 100%;
+#vehicle_graphics img {
+	max-width: 100%;
 	width: 26.041667%;/*250px*/
-	margin-left: 2.395833%;/*23px*/
+ height:100% margin-left: 2.395833%;/*23px*/
 	margin-bottom: 2.916667%;/*28px*/
 }
 #vehicle_graphics p {
-	width: 28%;
-	font-size: .875em;/*13px*/
 	font-family: Open Sans regular;
 	color: #454546;
-	margin-left: 23px;
+	font-size: 1.313em; /*21px*/
+	width: 100%; /*960px*/
 }
-#vehicle_graphics .read_more {
-	position: absolute;
-	top: 1000px;
-	left: 405px;
-}
-#illuminated_signs h3 {
-	position: absolute;
-	top: 552px;
-	left: 532px;
-}
-#illuminated_signs .photos {
+#illuminated_signs img {
+	max-width: 100%;
 	width: 26.041667%;/*250px*/
-	position: absolute;
-	top: 608px;
-	left: 530px;
-}
-#illuminated_signs p {
-	width: 18%;
-	font-size: .875em;/*13px*/
-	font-family: Open Sans regular;
-	color: #454546;
-	position: absolute;
-	top: 335px;
-	left: 360px;
-	top: 830px;
-	left: 570px;
-}
-#illuminated_signs .read_more {
-	position: absolute;
-	top: 1000px;
-	left: 605px;
-}
-#non_illuminated_signs h3 {
-	position: absolute;
-	top: 552px;
-	left: 865px;
-}
-#non_illuminated_signs .photos {
-	width: 26.041667%;/*250px*/
+	height: auto;
 	margin-left: 7.291667%; /*70px*/
 	margin-bottom: 2.916667%;/*28px*/
 	position: absolute;
-	top: 608px;
-	left: 800px;
+	top: 130px;
+	left: 292px;
 }
-#non_illuminated_signs p {
-	width: 18%;
-	font-size: .875em;/*13px*/
+#illuminated_signs p {
 	font-family: Open Sans regular;
 	color: #454546;
+	width: 100%; /*960px*/
+}
+#non_illuminated_signs img {
+	max-width: 100%;
+	width: 26.041667%;/*250px*/
+	height: auto;
+	margin-left: 7.291667%; /*70px*/
+	margin-bottom: 2.916667%;/*28px*/
 	position: absolute;
-	top: 830px;
-	left: 900px;
+	top: 130px;
+	left: 614px;
+}
+#non_illuminated_signs p {
+	font-family: Open Sans regular;
+	color: #454546;
+	width: 100%; /*960px*/
 }
 
 
@@ -263,11 +234,11 @@ nav ul {
 	box-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 nav li {
-	display: none;
+	display: none; 
 	margin: 0;
 }
 nav .current {
-	display: block;
+	display: block; 
 }
 nav a {
 	display: block;
@@ -278,6 +249,7 @@ nav .current a {
 	background: none;
 	color: #666;
 }
+
 nav ul:hover {
 	background-image: none;
 }
@@ -285,6 +257,7 @@ nav ul:hover li {
 	display: block;
 	margin: 0 0 5px;
 }
+
 nav.left ul {
 	left: auto;
 	right: 0;
